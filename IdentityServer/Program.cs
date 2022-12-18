@@ -1,5 +1,6 @@
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Test;
+using IdentityServer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,11 +13,11 @@ builder.Services.AddIdentityServer(options =>
 
     options.EmitStaticAudienceClaim = true;
 })
-    .AddTestUsers(new List<TestUser>())
-    .AddInMemoryClients(new List<Client>())
-    .AddInMemoryApiResources(new List<ApiResource>())
-    .AddInMemoryApiScopes(new List<ApiScope>())
-    .AddInMemoryIdentityResources(new List<IdentityResource>());
+    .AddTestUsers(TestUsers.Users)
+    .AddInMemoryClients(Config.Clients)
+    .AddInMemoryApiResources(Config.ApiResources)
+    .AddInMemoryApiScopes(Config.ApiScopes)
+    .AddInMemoryIdentityResources(Config.IdentityResources);
 
 var app = builder.Build();
 

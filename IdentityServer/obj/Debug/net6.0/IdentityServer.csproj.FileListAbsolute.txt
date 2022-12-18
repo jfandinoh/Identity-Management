@@ -30,3 +30,5 @@ D:\Projects\Identity Management\IdentityServer\obj\Debug\net6.0\refint\IdentityS
 D:\Projects\Identity Management\IdentityServer\obj\Debug\net6.0\IdentityServer.pdb
 D:\Projects\Identity Management\IdentityServer\obj\Debug\net6.0\IdentityServer.genruntimeconfig.cache
 D:\Projects\Identity Management\IdentityServer\obj\Debug\net6.0\ref\IdentityServer.dll
+D:\Projects\Identity Management\IdentityServer\bin\Debug\net6.0\keys\is-signing-key-06F2E9C1897A3B162F6AC1F8C992CA11.json
+D:\Projects\Identity Management\IdentityServer\bin\Debug\net6.0\Serilog.dll
