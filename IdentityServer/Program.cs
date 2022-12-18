@@ -1,28 +1,33 @@
-using Duende.IdentityServer.Models;
-using Duende.IdentityServer.Test;
 using IdentityServer;
+using Serilog;
 
-var builder = WebApplication.CreateBuilder(args);
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .CreateBootstrapLogger();
 
-builder.Services.AddIdentityServer(options =>
+Log.Information("Starting up");
+
+try
 {
-    options.Events.RaiseErrorEvents = true;
-    options.Events.RaiseInformationEvents = true;
-    options.Events.RaiseFailureEvents = true;
-    options.Events.RaiseSuccessEvents = true;
+    var builder = WebApplication.CreateBuilder(args);
 
-    options.EmitStaticAudienceClaim = true;
-})
-    .AddTestUsers(TestUsers.Users)
-    .AddInMemoryClients(Config.Clients)
-    .AddInMemoryApiResources(Config.ApiResources)
-    .AddInMemoryApiScopes(Config.ApiScopes)
-    .AddInMemoryIdentityResources(Config.IdentityResources);
+    builder.Host.UseSerilog((ctx, lc) => lc
+        .WriteTo.Console(outputTemplate: "[{Timestamp:HH:mm:ss} {Level}] {SourceContext}{NewLine}{Message:lj}{NewLine}{Exception}{NewLine}")
+        .Enrich.FromLogContext()
+        .ReadFrom.Configuration(ctx.Configuration));
 
-var app = builder.Build();
+    var app = builder
+        .ConfigureServices()
+        .ConfigurePipeline();
 
-app.UseIdentityServer();
-
-app.MapGet("/", () => "Identity Server!");
-
-app.Run();
+    app.Run();
+}
+catch (Exception ex)
+{
+    Log.Fatal(ex, "Unhandled exception");
+}
+finally
+{
+    Log.Information("Shut down complete");
+    Log.CloseAndFlush();
+}

@@ -32,3 +32,12 @@ D:\Projects\Identity Management\IdentityServer\obj\Debug\net6.0\IdentityServer.g
 D:\Projects\Identity Management\IdentityServer\obj\Debug\net6.0\ref\IdentityServer.dll
 D:\Projects\Identity Management\IdentityServer\bin\Debug\net6.0\keys\is-signing-key-06F2E9C1897A3B162F6AC1F8C992CA11.json
 D:\Projects\Identity Management\IdentityServer\bin\Debug\net6.0\Serilog.dll
+D:\Projects\Identity Management\IdentityServer\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Projects\Identity Management\IdentityServer\bin\Debug\net6.0\Serilog.AspNetCore.dll
+D:\Projects\Identity Management\IdentityServer\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+D:\Projects\Identity Management\IdentityServer\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+D:\Projects\Identity Management\IdentityServer\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+D:\Projects\Identity Management\IdentityServer\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+D:\Projects\Identity Management\IdentityServer\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+D:\Projects\Identity Management\IdentityServer\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+D:\Projects\Identity Management\IdentityServer\bin\Debug\net6.0\Serilog.Sinks.File.dll
