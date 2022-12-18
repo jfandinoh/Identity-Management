@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "+XvJ0P3hSEVmitT8Gb/CAJvQNPFoOjbxFBTJLWdYXxfkoeyRXtbVsM7QskgpEDBOqTgse2MvMhjwAoPTvd9FrQ==",
+  "dgSpecHash": "jsjKPm3eHsbSf5OOtRJdlSXFPloLgDLZhhzj/SONgnHvUN+uFmKZG1OB3B+sPQseNUiymSfjWH6qJh8sDFtEKg==",
   "success": true,
   "projectFilePath": "D:\\Projects\\Identity Management\\IdentityServer\\IdentityServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jfandinoh\\.nuget\\packages\\duende.identityserver\\6.2.0\\duende.identityserver.6.2.0.nupkg.sha512",
     "C:\\Users\\jfandinoh\\.nuget\\packages\\duende.identityserver.storage\\6.2.0\\duende.identityserver.storage.6.2.0.nupkg.sha512",
     "C:\\Users\\jfandinoh\\.nuget\\packages\\identitymodel\\6.0.0\\identitymodel.6.0.0.nupkg.sha512",
+    "C:\\Users\\jfandinoh\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\3.0.0-preview8.19405.7\\microsoft.aspnetcore.authentication.google.3.0.0-preview8.19405.7.nupkg.sha512",
     "C:\\Users\\jfandinoh\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\6.0.0\\microsoft.aspnetcore.authentication.openidconnect.6.0.0.nupkg.sha512",
     "C:\\Users\\jfandinoh\\.nuget\\packages\\microsoft.aspnetcore.dataprotection.abstractions\\6.0.0\\microsoft.aspnetcore.dataprotection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\jfandinoh\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

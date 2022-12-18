@@ -52,6 +52,22 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Authentication.Google/3.0.0-preview8.19405.7": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Authentication.OpenIdConnect/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -651,6 +667,19 @@
         "lib/netstandard2.0/IdentityModel.dll",
         "lib/netstandard2.0/IdentityModel.pdb",
         "lib/netstandard2.0/IdentityModel.xml"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.Google/3.0.0-preview8.19405.7": {
+      "sha512": "22Q8YhUSez3KIC0Y/OGvzzqjLGSqTUh6zYmp52gbcy4JHFWc10sV/MBQyqfVYMbwWGnwTf0rYIZzfMW/NRdmAA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.google/3.0.0-preview8.19405.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Google.dll",
+        "lib/netcoreapp3.0/Microsoft.AspNetCore.Authentication.Google.xml",
+        "microsoft.aspnetcore.authentication.google.3.0.0-preview8.19405.7.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.google.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.OpenIdConnect/6.0.0": {
@@ -1373,6 +1402,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Duende.IdentityServer >= 6.2.0",
+      "Microsoft.AspNetCore.Authentication.Google >= 3.0.0-preview8.19405.7",
       "Serilog.AspNetCore >= 6.1.0"
     ]
   },
@@ -1418,6 +1448,10 @@
           "Duende.IdentityServer": {
             "target": "Package",
             "version": "[6.2.0, )"
+          },
+          "Microsoft.AspNetCore.Authentication.Google": {
+            "target": "Package",
+            "version": "[3.0.0-preview8.19405.7, )"
           },
           "Serilog.AspNetCore": {
             "target": "Package",
